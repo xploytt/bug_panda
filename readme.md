@@ -75,12 +75,14 @@ To set up Gulp for this project, follow these steps:
     Gulp tasks. Here's an example: const gulp = require('gulp'); const
     sass = require('gulp-sass')(require('sass'));
 
+```{=javascript}
 function compileSass() { return gulp.src('scss/\*.scss') .pipe(sass())
 .pipe(gulp.dest('css')); }
 
 function watchSass() { gulp.watch('scss/\*.scss', compileSass); }
 
 exports.default = gulp.series(compileSass, watchSass);
+````
 
 5.  Save the gulpfile.js and run gulp in your command line to start the
     Gulp tasks. This will compile the SCSS files into CSS and watch for
