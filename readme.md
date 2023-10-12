@@ -76,10 +76,13 @@ To set up Gulp for this project, follow these steps:
     sass = require('gulp-sass')(require('sass'));
 
 ```{=javascript}
-function compileSass() { return gulp.src('scss/\*.scss') .pipe(sass())
-.pipe(gulp.dest('css')); }
+function compileSass() { return gulp.src('scss/\*.scss')
+  .pipe(sass())
+  .pipe(gulp.dest('css')); }
 
-function watchSass() { gulp.watch('scss/\*.scss', compileSass); }
+function watchSass() { 
+  gulp.watch('scss/\*.scss', compileSass); 
+}
 
 exports.default = gulp.series(compileSass, watchSass);
 ````
