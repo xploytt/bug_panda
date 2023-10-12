@@ -1,0 +1,16 @@
+$gradient_bg: linear-gradient(145deg,#e2e8ec,#fff);
+
+$general-bg: #ecf0f3;
+
+$primary-blue: #4169e1;
+
+$primary-border-radius: .5rem;
+
+$primary-padding: 4rem;
+
+$primary-box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #fff;
+
+@mixin f_flex {
+    display: flex;
+    align-items: center;
+}

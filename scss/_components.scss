@@ -1,0 +1,15 @@
+header, #logo{
+    @include f_flex;
+
+}
+
+@media (min-width:570px) {
+    #contact_et_skills{
+        @include f_flex;
+        flex-direction: row;
+
+        > div:nth-child(2){
+            margin-left: auto;
+        }
+    }
+}
